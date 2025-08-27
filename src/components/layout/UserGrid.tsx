@@ -1,4 +1,4 @@
-import EmptyState from "./EmptyState";
+import EmptyState from "./ui/EmptyState";
 import UserCard from "./UserCard";
 
 import type { User } from "../types";

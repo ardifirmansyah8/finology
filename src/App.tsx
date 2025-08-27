@@ -1,13 +1,13 @@
 import { Building, MapPin, Users } from "lucide-react";
 
-import ErrorMessage from "./components/ErrorMessage";
-import Spinner from "./components/Spinner";
+import ErrorMessage from "./components/ui/ErrorMessage";
+import Spinner from "./components/ui/Spinner";
 import UserGrid from "./components/UserGrid";
 import { useFilters } from "./hooks/useFilters";
 import { useUsers } from "./hooks/useUsers";
-import SearchInput from "./components/SearchInput";
-import FilterDropdown from "./components/FilterDropdown";
-import ClearBtn from "./components/ClearBtn";
+import SearchInput from "./components/filters/SearchInput";
+import FilterDropdown from "./components/filters/FilterDropdown";
+import ClearBtn from "./components/filters/ClearBtn";
 
 function App() {
   const { users, loading, error, refetch } = useUsers();

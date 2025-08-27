@@ -1,7 +1,7 @@
 import { Building, Globe, MapPin, Phone, Users } from "lucide-react";
 
 import UserDetail from "./UserDetail";
-import type { User } from "../types";
+import type { User } from "../../types";
 
 interface Props {
   user: User;

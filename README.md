@@ -35,9 +35,9 @@ I adopted a **modular, component-based approach** to ensure maintainability, reu
 
 #### **Component Categories**
 
-1. **UI Components**: Pure presentational components (`LoadingSpinner`, `ErrorMessage`, `EmptyState`)
+1. **UI Components**: Pure presentational components (`Spinner`, `ErrorMessage`, `EmptyState`)
 2. **Layout Components**: Structure and container components (`UserGrid`)
-3. **Filter Components**: Reusable filter controls (`SearchInput`, `FilterDropdown`, `ClearFiltersBtn`)
+3. **Filter Components**: Reusable filter controls (`SearchInput`, `FilterDropdown`, `ClearBtn`)
 4. **Data Display Components**: User information presentation (`UserCard`, `UserDetail`)
 
 ### Design Principles
@@ -145,22 +145,18 @@ src/
 │   └── index.ts               # User, API response types
 ├── components/
 │   ├── ui/                     # Pure UI components
-│   │   ├── LoadingSpinner.tsx
+│   │   ├── Spinner.tsx
 │   │   ├── ErrorMessage.tsx
 │   │   └── EmptyState.tsx
 │   ├── layout/                 # Layout & structure
-│   │   ├── Header.tsx
-│   │   ├── MainContent.tsx
 │   │   └── UserGrid.tsx
 │   ├── filters/                # Filter-related components
 │   │   ├── SearchInput.tsx
 │   │   ├── FilterDropdown.tsx
-│   │   ├── ClearFiltersButton.tsx
-│   │   └── SearchFilters.tsx
+│   │   ├── ClearBtn.tsx
 │   └── user/                   # User display components
 │       ├── UserCard.tsx
 │       ├── UserDetail.tsx
-│       └── ResultsHeader.tsx
 ├── hooks/                      # Custom hooks with TypeScript
 │   ├── useUsers.ts            # API & user data management
 │   └── useFilters.ts          # Filter state & logic
